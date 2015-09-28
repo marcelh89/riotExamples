@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HelloRiot</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <div class="container">
+    <header></header>
+    <content></content>
+    <footer></footer>
+
+  </div>
+
+<!--jquery-->
+<!--<script src="https://code.jquery.com/jquery-1.11.3.js"></script>-->
+<!-- bootstrap -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+<!-- riot -->
+<script src="header.tag" type="riot/tag"></script>
+<script src="content.tag" type="riot/tag"></script>
+<script src="footer.tag" type="riot/tag"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.2.4/riot+compiler.min.js"></script>
+
+<script>
+    riot.mount('*');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HelloRiot</title>
+
+    <!-- Latest Sortable -->
+    <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="container-fluid">
+        <benzinkostenrechner class="col-md-4 component"></benzinkostenrechner>
+        <bruttonettorechner class="col-md-4 component"></bruttonettorechner>
+        <kostenanteilsrechner class="col-md-4 component"></kostenanteilsrechner>
+        <dragdrop class="col-md-4 component"></dragdrop>
+
+</div>
+
+
+<!--jquery-->
+<!--<script src="https://code.jquery.com/jquery-1.11.3.js"></script>-->
+<!-- bootstrap -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+<!-- riot -->
+<script src="benzinkosten.tag" type="riot/tag"></script>
+<script src="bruttonetto.tag" type="riot/tag"></script>
+<script src="dragdrop.tag" type="riot/tag"></script>
+<script src="kostenanteil.tag" type="riot/tag"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.2.4/riot+compiler.min.js"></script>
+
+<script>
+    riot.mount('benzinkostenrechner', {title: 'Benzinkostenrechner'})
+    riot.mount('bruttonettorechner', {title: 'Brutto-Netto-Rechner'})
+    riot.mount('dragdrop', {title: 'Drag and Drop Test'})
+    riot.mount('kostenanteilsrechner', {title: 'Kostenanteilsrechner'})
+
+</script>
+
+</body>
+</html>
